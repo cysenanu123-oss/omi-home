@@ -1,0 +1,26 @@
+{
+  "name": "ama-desktop",
+  "version": "1.0.0",
+  "description": "Ama — Personal AI Home Assistant",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^30.0.0"
+  },
+  "build": {
+    "appId": "com.oma.ama",
+    "productName": "Ama",
+    "win": {
+      "icon": "icon.ico",
+      "target": "nsis"
+    },
+    "linux": {
+      "icon": "icon.png",
+      "target": "AppImage"
+    }
+  }
+}
